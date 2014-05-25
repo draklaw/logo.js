@@ -1,13 +1,11 @@
-logo.js
--------------------------------------------------------------------------------
+# logo.js
 
 logo.js is a small web application that allow to edit SVG imaged with various
 widgets. You can try a live demo [here](http://draklaw.github.io/logo.js).
 Samples files can be found in the samples directory.
 
 
-How to use
--------------------------------------------------------------------------------
+## How to use
 
 Right now, there is no GUI to add widgets, so they should be added directly to
 the SVG. The first step is to add a `control` tag in the `defs` bloc. Then you
@@ -26,7 +24,7 @@ Available widgets are:
   slider (default to 1/1000 of the total range).
 * `color`: Used to set colors. There is no additional attributes.
 
-## Target syntax
+### Target syntax
 
 The `target` attribute of widgets tag describe the SVG parameters that are
 controlled by the widget. To control attributes (like `x`, `y`, `r`, `fill`,
@@ -44,9 +42,9 @@ should match. If the type is `translate`, param should be either `x` or `y`.
 If the type is `scale`, param can be `x`, `y` or nothing for uniform scales.
 Rotations does not take parameter yet.
 
-## Example
+### Example
 
-```
+```xml
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 		width="512px" height="256px" version="1.1" >
 	<defs>
