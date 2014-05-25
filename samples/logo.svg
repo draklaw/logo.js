@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ctrl="ctrl" width="512px" height="772px" version="1.1" style="float: left;">
 	<defs>
-		<ctrl:controls>
-			<ctrl:real id="outerRadius" targets="#outer.r" min="0" max="1" value="0.8"></ctrl:real>
-			<ctrl:real id="innerRadius" targets="#inner.r" min="0" max="1" value="0.667"></ctrl:real>
-			<ctrl:real id="coreRadius" targets="#core.r" min="0" max="1" value="0.452"></ctrl:real>
-			<ctrl:real id="innerOffset" targets="#inner.cy, #core.cy" min="-1" max="1" value="0.346"></ctrl:real>
-			<ctrl:real id="dotsRotation" targets="#dots.transform(0:rotate)" min="-180" max="180" step="5" value="0"></ctrl:real>
-			<ctrl:real id="dotsOffset" targets="#dots.transform(1:translate:y)" min="-1" max="0" value="-0.669"></ctrl:real>
-			<ctrl:real id="dotsScale" targets="#dots.transform(2:scale)" min="0" max="1" value="0.443"></ctrl:real>
-			<ctrl:real id="dotsRotationSelf" targets="#dots.transform(3:rotate)" min="-60" max="60" step="5" value="-60"></ctrl:real>
-			<ctrl:real id="triBorder" targets="#triangleBg.transform(0:scale)" min=".9" max="2" value="0.9"></ctrl:real>
-			<ctrl:real id="dotRadius" targets="#nDot.r, #seDot.r, #swDot.r" min="0" max="1" value="0.349"></ctrl:real>
-			<ctrl:real id="dotBorderRadius" targets="#nDotBg.r, #seDotBg.r, #swDotBg.r" min="0" max="1" value="0.668"></ctrl:real>
-			<ctrl:color id="bgColor" targets=".bg.fill" value="#f0f0f0"></ctrl:color>
-			<ctrl:color id="fillColor" targets=".filled.fill" value="#404040"></ctrl:color>
-		</ctrl:controls>
+		<controls>
+			<real id="outerRadius" targets="#outer.r" min="0" max="1" value="0.8"></real>
+			<real id="innerRadius" targets="#inner.r" min="0" max="1" value="0.667"></real>
+			<real id="coreRadius" targets="#core.r" min="0" max="1" value="0.452"></real>
+			<real id="innerOffset" targets="#inner.cy, #core.cy" min="-1" max="1" value="0.346"></real>
+			<real id="dotsRotation" targets="#dots.transform(0:rotate)" min="-180" max="180" step="5" value="0"></real>
+			<real id="dotsOffset" targets="#dots.transform(1:translate:y)" min="-1" max="0" value="-0.669"></real>
+			<real id="dotsScale" targets="#dots.transform(2:scale)" min="0" max="1" value="0.443"></real>
+			<real id="dotsRotationSelf" targets="#dots.transform(3:rotate)" min="-60" max="60" step="5" value="-60"></real>
+			<real id="triBorder" targets="#triangleBg.transform(0:scale)" min=".9" max="2" value="0.9"></real>
+			<real id="dotRadius" targets="#nDot.r, #seDot.r, #swDot.r" min="0" max="1" value="0.349"></real>
+			<real id="dotBorderRadius" targets="#nDotBg.r, #seDotBg.r, #swDotBg.r" min="0" max="1" value="0.668"></real>
+			<color id="bgColor" targets=".bg.fill" value="#f0f0f0"></color>
+			<color id="fillColor" targets=".filled.fill" value="#404040"></color>
+		</controls>
 		<g id="logo" clip-rule="nonzero">
 			<clipPath id="borderClip">
 				<rect x="-1" y="-1" width="2" height="2"></rect>
