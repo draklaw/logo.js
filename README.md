@@ -1,8 +1,8 @@
 # logo.js
 
-logo.js is a small web application that allow to edit SVG imaged with various
+logo.js is a small web application that allow to edit SVG images with various
 widgets. You can try a live demo [here](http://draklaw.github.io/logo.js).
-Samples files can be found in the samples directory.
+Sample files can be downloaded from the samples directory.
 
 
 ## How to use
@@ -30,15 +30,15 @@ The `target` attribute of widgets tag describe the SVG parameters that are
 controlled by the widget. To control attributes (like `x`, `y`, `r`, `fill`,
 etc.) the syntax is `selector.attribute`. Selector starting with `#` select
 elements by id and those starting with `.` select elements by class. Several
-target ca be separated with a comma.
+targets can be separated with a comma.
 
 Transformations are a bit more complicated. First, the target element should
 already have its `transform` attribute defined. The target syntax is
 `selector.transform(index:type[:param])` where param is optional. Index is the
 index of the transformation (0 for the first, 1 for the second, etc.) and type
 is `translate`, `rotate` or `scale` (other transforms are not supported yet).
-The type declared in the target and corresponding transformation in the SVG
-should match. If the type is `translate`, param should be either `x` or `y`.
+The type declared in the target and the corresponding transformation in the SVG
+must match. If the type is `translate`, param should be either `x` or `y`.
 If the type is `scale`, param can be `x`, `y` or nothing for uniform scales.
 Rotations does not take parameter yet.
 
@@ -62,7 +62,8 @@ Rotations does not take parameter yet.
 
 			<!-- Rotate the square. As you can not control the center, will
 				 rotate from the top-left corner. A way to avoid this would be
-				 to control the square size and position with transforms too -->
+				 to control the square size and position with transforms too.
+				 See the sample logo.svg for an example. -->
 			<real id="squareRotate" targets="#square.transform(0:rotate)" min="-180" max="180" step="5" />
 
 			<!-- Change the color of elements with the class 'color' -->
