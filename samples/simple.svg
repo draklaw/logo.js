@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		width="512px" height="256px" version="1.1" >
+	<defs>
+		<controls>
+
+			<!-- Change the X position of the square -->
+			<real id="squareX" targets="#square.x" min="0" max="512" />
+
+			<!-- Change the Y position of the square -->
+			<real id="squareY" targets="#square.y" min="0" max="256" />
+
+			<!-- Change both the widht and the height of the square -->
+			<real id="squareSide" targets="#square.width, #square.height"
+					min="0" max="250" step="10" />
+
+			<!-- Rotate the square. As you can not control the center, will
+				 rotate from the top-left corner. A way to avoid this would be
+				 to control the square size and position with transforms too -->
+			<real id="squareRotate" targets="#square.transform(0:rotate)" min="-180" max="180" step="5" />
+
+			<!-- Change the color of elements with the class 'color' -->
+			<color id="color" targets=".color.fill" />
+		</controls>
+	</defs>
+
+	<rect x="0" y="0" width="512" height="256" fill="#f0f0f0" />
+	<circle class="color" cx="492" cy="236" r="20" fill="#d04040" />
+	<rect id="square" class="color" transform="rotate(0)"
+			x="20" y="10" width="50" height="50" fill="#d04040" />
+</svg>
